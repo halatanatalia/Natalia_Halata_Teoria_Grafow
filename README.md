@@ -7,8 +7,8 @@
 
 To properly use the algorithm, you must use a JSON file, in a format like this:   
 
-  s - start of an edge - number
-  e - end of an edge - number
+  s - start of an edge - number<br/>
+  e - end of an edge - number<br/>
   w - weight of an edge - number
 ```
 [
@@ -37,7 +37,7 @@ The result is a number of maximum flow in the given graph from source to sink.
 Some problems were solved were solved by this algorithm, but within the time, the Goldberg and Tarjan's algorithm, Dinitz's algorithm etc. replace it. 
 
 ### Source
-https://digitalcommons.georgiasouthern.edu/cgi/viewcontent.cgi?article=2720&context=etd
-http://www.jistm.com/PDF/JISTM-2017-04-06-02.pdf
-https://en.wikipedia.org/wiki/Ford–Fulkerson_algorithm
+https://digitalcommons.georgiasouthern.edu/cgi/viewcontent.cgi?article=2720&context=etd<br/>
+http://www.jistm.com/PDF/JISTM-2017-04-06-02.pdf<br/>
+https://en.wikipedia.org/wiki/Ford–Fulkerson_algorithm<br/>
 https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/
