@@ -47,8 +47,13 @@ class Graph:
 # opening file
 print("Write the file name as: filename.json")
 filename = input()
-with open(filename, "r") as file:
-    data = json.load(file)
+try:
+    with open(filename, "r") as file:
+        data = json.load(file)
+except:
+        print("Wrong file name")
+        exit()
+
 
 # parsing and setting data for the beggining
 V = [0]
@@ -76,4 +81,13 @@ for i in range(0, n):
 sourc = data[-1][0]
 sin = data[-1][1]
 g = Graph(graph)
+
+if a < sourc:
+    print("Incorrect source")
+    exit()
+if a < sin:
+    print("Incorrect sink")
+    exit()
+
+
 print("Max Flow for chosen source and sink: %d " % g.ford_fulkerson(sourc, sin))
